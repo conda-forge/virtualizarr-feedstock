@@ -17,17 +17,17 @@ build:
 requirements:
   host:
     - python >=3.10
+    - setuptools >=61.0.0
+    - setuptools-scm >=7.0
     - pip
   run:
     - python >=3.10
     - xarray >=2024.06.0
-    - kerchunk >=0.2.5
-    - h5netcdf
-    - pydantic
     - numpy >=2.0.0
-    - ujson
     - packaging
     - universal_pathlib
+    - numcodecs
+    - ujson
 
 test:
   imports:
