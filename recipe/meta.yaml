@@ -1,5 +1,5 @@
 {% set name = "virtualizarr" %}
-{% set version = "1.0.0" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/virtualizarr-{{ version }}.tar.gz
-  sha256: 6d78d6b94e0341fe728783debfbbeb64cbca986b134ee7014885640379e6e47b
+  sha256: aac88722118a273720c7cef2943dc824d0ef40b80159c6faa155ebc847b5a390
 
 build:
   noarch: python
@@ -17,17 +17,17 @@ build:
 requirements:
   host:
     - python >=3.10
+    - setuptools >=61.0.0
+    - setuptools-scm >=7.0
     - pip
   run:
     - python >=3.10
     - xarray >=2024.06.0
-    - kerchunk >=0.2.5
-    - h5netcdf
-    - pydantic
     - numpy >=2.0.0
-    - ujson
     - packaging
     - universal_pathlib
+    - numcodecs
+    - ujson
 
 test:
   imports:
