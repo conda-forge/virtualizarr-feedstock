@@ -1,13 +1,13 @@
 {% set name = "virtualizarr" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/virtualizarr-{{ version }}.tar.gz
-  sha256: aac88722118a273720c7cef2943dc824d0ef40b80159c6faa155ebc847b5a390
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/virtualizarr-{{ version }}.tar.gz
+  sha256: 0eb9aecf09fd347d1691b407ed3798f55f038a3044bd9ccd23bd9c49f90e036d
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.10
-    - xarray >=2024.06.0
+    - xarray >=2024.10.0
     - numpy >=2.0.0
     - packaging
     - universal_pathlib
