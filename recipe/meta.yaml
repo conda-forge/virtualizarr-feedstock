@@ -29,15 +29,8 @@ requirements:
     - numcodecs
     - ujson
   run_constrained:
-    - fsspec
-    - s3fs
-    - h5py
-    - hdf5
-    - hdf5plugin
     - imagecodecs >=2024.6.1
     - kerchunk >=0.2.8
-    - scipy
-    - astropy
     - icechunk >=0.1.1
 
 test:
