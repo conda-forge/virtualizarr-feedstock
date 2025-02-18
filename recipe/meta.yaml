@@ -46,10 +46,9 @@ test:
 about:
   home: https://pypi.org/project/virtualizarr/
   summary: Create virtual Zarr stores from archival data using xarray API
-  license: MIT AND Apache-2.0
+  license: Apache-2.0
   license_file:
     - LICENSE
-    - virtualizarr/vendor/zarr/LICENSE.txt
 
 extra:
   recipe-maintainers:
