@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/virtualizarr-fe
 
 Home: https://pypi.org/project/virtualizarr/
 
-Package license: MIT AND Apache-2.0
+Package license: Apache-2.0
 
 Summary: Create virtual Zarr stores from archival data using xarray API
 
