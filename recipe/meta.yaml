@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "virtualizarr" %}
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/virtualizarr-{{ version }}.tar.gz
-  sha256: e42b5ddcf4d2a5a65240387398b842aa5c8c35446fc3dcb04fc073a38288a936
+  sha256: 2ad9a6dd2c864d76465fe4945e734a4e8d548fe0a8143f1f5a14b36121ef8a23
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - universal-pathlib
     - zarr >=3.1.0
     - python >={{ python_min }}
-    - xarray >=2025.03.0
+    - xarray >=2025.3.0
     - numpy >=2.0.0
     - packaging
     - universal_pathlib
