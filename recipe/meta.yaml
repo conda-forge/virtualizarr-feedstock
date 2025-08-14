@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "virtualizarr" %}
-{% set version = "2.0.1" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/virtualizarr-{{ version }}.tar.gz
-  sha256: 2a2172c99ef6f6630af0b4076644ea8bb5bd2127db7ab372902e093264847438
+  sha256: e42b5ddcf4d2a5a65240387398b842aa5c8c35446fc3dcb04fc073a38288a936
 
 build:
   noarch: python
@@ -17,7 +17,7 @@ build:
 
 requirements:
   host:
-    - python >={{ python_min }}
+    - python {{ python_min }}
     - setuptools >=61.0.0
     - setuptools-scm >=7.0
     - pip
@@ -26,7 +26,7 @@ requirements:
     - universal-pathlib
     - zarr >=3.1.0
     - python >={{ python_min }}
-    - xarray ==2025.06.0
+    - xarray >=2025.03.0
     - numpy >=2.0.0
     - packaging
     - universal_pathlib
@@ -35,7 +35,7 @@ requirements:
   run_constrained:
     - imagecodecs >=2024.6.1
     - kerchunk >=0.2.8
-    - icechunk >=1.0.0
+    - icechunk >=1.1.2
 
 test:
   imports:
