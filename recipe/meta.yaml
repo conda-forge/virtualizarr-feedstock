@@ -29,7 +29,6 @@ requirements:
     - xarray >=2025.03.0
     - numpy >=2.0.0
     - packaging
-    - universal_pathlib
     - numcodecs >=0.15.1
     - ujson
   run_constrained:
