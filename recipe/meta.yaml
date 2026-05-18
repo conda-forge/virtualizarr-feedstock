@@ -1,6 +1,6 @@
 {% set python_min = "3.12" %}
 {% set name = "virtualizarr" %}
-{% set version = "2.6.1" %}
+{% set version = "2.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/virtualizarr-{{ version }}.tar.gz
-  sha256: 6d713304bba092feb55a9068f694a5969760266b02f5cec4c0f859598da95e7a
+  sha256: cc6df21fa0acdeae50a9f7d170ea4fd9efe4fb8ee7061a70d9ddaef82a8b443e
 
 build:
   noarch: python
